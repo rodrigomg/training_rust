@@ -13,3 +13,6 @@
 [submodule "scalar_types_rust"]
 	path = scalar_types_rust
 	url = git@github.com:rodrigomg/scalar_types_rust.git
+[submodule "compound_types_rust"]
+	path = compound_types_rust
+	url = git@github.com:rodrigomg/compound_types_rust.git

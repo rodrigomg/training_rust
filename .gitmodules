@@ -7,3 +7,6 @@
 [submodule "guessing_game"]
 	path = guessing_game
 	url = git@github.com:rodrigomg/guessing_game.git
+[submodule "variables_rust"]
+	path = variables_rust
+	url = git@github.com:rodrigomg/variables_rust.git

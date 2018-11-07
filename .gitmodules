@@ -1,3 +1,6 @@
 [submodule "shell-rust"]
 	path = shell-rust
 	url = git@github.com:rodrigomg/shell-rust.git
+[submodule "hello_cargo"]
+	path = hello_cargo
+	url = git@github.com:rodrigomg/hello_cargo.git

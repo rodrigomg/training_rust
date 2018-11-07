@@ -1,0 +1,3 @@
+[submodule "shell-rust"]
+	path = shell-rust
+	url = git@github.com:rodrigomg/shell-rust.git

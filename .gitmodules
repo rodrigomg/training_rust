@@ -4,3 +4,6 @@
 [submodule "hello_cargo"]
 	path = hello_cargo
 	url = git@github.com:rodrigomg/hello_cargo.git
+[submodule "guessing_game"]
+	path = guessing_game
+	url = git@github.com:rodrigomg/guessing_game.git

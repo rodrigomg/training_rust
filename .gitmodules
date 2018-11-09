@@ -16,3 +16,6 @@
 [submodule "compound_types_rust"]
 	path = compound_types_rust
 	url = git@github.com:rodrigomg/compound_types_rust.git
+[submodule "functions_rust"]
+	path = functions_rust
+	url = git@github.com:rodrigomg/functions_rust.git

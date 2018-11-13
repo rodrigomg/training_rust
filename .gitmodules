@@ -19,3 +19,6 @@
 [submodule "functions_rust"]
 	path = functions_rust
 	url = git@github.com:rodrigomg/functions_rust.git
+[submodule "branches_rust"]
+	path = branches_rust
+	url = git@github.com:rodrigomg/branches_rust

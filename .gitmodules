@@ -22,3 +22,6 @@
 [submodule "branches_rust"]
 	path = branches_rust
 	url = git@github.com:rodrigomg/branches_rust
+[submodule "loops_rust"]
+	path = loops_rust
+	url = git@github.com:rodrigomg/loops_rust

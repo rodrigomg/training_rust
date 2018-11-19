@@ -201,3 +201,9 @@ Tulplas, coleción de objetos de difernete tipo.
 Arreglos, colección de obajetos del mismo tipo.
 
 En rust a diferencia de otros lenguajes de bajo nivel cuando se intenta acceder a un índice inválido dentro de un arreglo te proteje y el programa entra en "pánico" y su ejecución termina.
+
+Reglas de propiedad:
+
+* Cada valor en Rust tiene una variable que se llama su propietario.
+* Solo puede haber un dueño a la vez.
+* Cuando el propietario queda fuera del alcance, el valor se eliminará.

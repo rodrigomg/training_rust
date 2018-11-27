@@ -214,3 +214,16 @@ hemos terminado con nuestra cadena.
 Rust hace uso del patrón RAII (Resource Acquisition Is Initialization, c++), patrón de desasignación de recursos al final de la vida útil de un elemento.
 
 Cuando un variable está fuera de su alcance (scope) rust hace el llamado de la función drop de manera automártica para liberar la memoria (es la razón por la que el lenguaje no tiene en garbage collector), este manejo de recursos de la memoria esta referido a el heap de la misma.
+
+Almacenamiento en memoria de un String
+
+Stack:
+* nombre
+* puntero
+* longuitud
+* capacidad
+
+Heap:
+* Contenido del String
+
+Rust nunca crea copias de los datos por default.

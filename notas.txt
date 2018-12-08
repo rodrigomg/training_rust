@@ -231,4 +231,4 @@ Deep copy, en rust es conocido como clone.
 
 Rust nunca crea copias de los datos por default.
 
-Cuando el contenido de la variable es conocida en tiempo de compilación esta variable es alamcenada en el Stack de la memoria por lo que puede ser copiada (swallow copy) entre variables, sin la necesidad de clonarla.
+Cuando el tamaño de la variable es conocida en tiempo de compilación esta variable es alamcenada en el Stack de la memoria por lo que puede ser copiada (swallow copy) entre variables, sin la necesidad de clonarla.

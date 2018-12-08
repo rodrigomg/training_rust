@@ -25,3 +25,6 @@
 [submodule "loops_rust"]
 	path = loops_rust
 	url = git@github.com:rodrigomg/loops_rust
+[submodule "ownership_rust"]
+	path = ownership_rust
+	url = git@github.com:rodrigomg/ownership_rust

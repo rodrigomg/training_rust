@@ -1,4 +1,7 @@
-pertenencia
+### Rust training
+### Rust examples by chapter, book rust programming language
+
+## Pertenencia
 
 Se refiere al manejo de memoria.
 Regla que debe cumplir el compilador, regla de memoria, es similiar a c y c++, interoperabilidad.
@@ -12,7 +15,7 @@ Heap, valores variables
   * Fuera de alcance se desecha
 Estas reglas a variables de tamaño no fijo
 
-Train the trainers
+## Train the trainers
 
 Consultar ayuda de comandos, ejemplo:
 
@@ -38,9 +41,9 @@ Struct, type, and enum, nuevos tipos de dato en rust.
 
 Trait, interfaz mas clase abstracta.
 
-Manejo de memoria:
+## Manejo de memoria:
 
-Data:
+# Data:
 Código compilado y variables estáticas.
 
 Stack (Pila) Estática:
@@ -70,7 +73,7 @@ Option para el manejo de null
 Result para el manejo de excepciones.
 
 Ejemplo de borrowing
-
+```
 #[derive(Debug)]
 struct PhoneNumber {
     value: i32,
@@ -86,12 +89,13 @@ fn main() {
     let number = Some(PhoneNumber {value: 491728});
     call_me_maybe(&number);
 }
+```
 
-
-Test:
+# Test:
 
 Unidad
 
+```
 enum Direction { North, South, East, West }
 
 fn is_north(dir: Direction) -> bool {
@@ -106,9 +110,10 @@ fn is_north_works() {
     assert!(is_north(Direction::North) == true);
     assert!(is_north(Direction::South) == false);
 }
+```
 
-Submodule
-
+# Submodule
+```
 enum Direction { North, South, East, West }
 
 fn is_north(dir: Direction) -> bool {
@@ -128,10 +133,11 @@ mod tests {
         assert!(is_north(Direction::South) == false);
     }
 }
+```
 
+# Uso de self y Self
 
-Uso de self y Self
-
+```
 struct Point {
     x: i32,
     y: i32
@@ -143,9 +149,11 @@ impl Point {
     fn distance(self: &Self, other: &Point) -> f64 {
     fn distance(self: &Point, other: &Point) -> f64 {
 }
+```
 
-lifetimes
+# lifetimes
 
+```
 #[derive(Debug)]
 struct Cmd<'a> {
     binary: &'a str,
@@ -171,11 +179,12 @@ fn main() {
 
     println!("{:?}", cmd)
 }
+```
 
-Tipos de datos scalar:
+## Tipos de datos scalar:
 Enteros, flotantes, boleanos y caracteres.
 
-Enteros:
+# Enteros:
 
 Signed -> Con signo, números negativos y positivos.
 i8 -> −(2 n-1) to (2 n-1 − 1) n es el número de bits (8,16,32,64).
@@ -183,14 +192,14 @@ i8 -> −(2 n-1) to (2 n-1 − 1) n es el número de bits (8,16,32,64).
 Unsigned -> Sin signo, números positivos.
 u8 -> 0 a 2n − 1,  puede almacenar numeros de 0 a 2 a la 8 - 1, de 0 a 255.
 
-Flotantes:
+# Flotantes:
 
 f32 (bits) mayor precisión, precisión simple.
 
 f64 (bits) mayor velocidad, rust lo toma como default, doble precisión.
 
 
-Tipos compuestos:
+# Tipos compuestos:
 
 Rust permite agrupar multiples valores en un solo tipo.
 
@@ -202,7 +211,7 @@ Arreglos, colección de obajetos del mismo tipo.
 
 En rust a diferencia de otros lenguajes de bajo nivel cuando se intenta acceder a un índice inválido dentro de un arreglo te proteje y el programa entra en "pánico" y su ejecución termina.
 
-Reglas de propiedad:
+# Reglas de propiedad:
 
 * Cada valor en Rust tiene una variable que se llama su propietario.
 * Solo puede haber un dueño a la vez.
@@ -215,7 +224,7 @@ Rust hace uso del patrón RAII (Resource Acquisition Is Initialization, c++), pa
 
 Cuando un variable está fuera de su alcance (scope) rust hace el llamado de la función drop de manera automática para liberar la memoria (es la razón por la que el lenguaje no tiene en garbage collector), este manejo de recursos de la memoria esta referido a el heap de la misma.
 
-Almacenamiento en memoria de un String
+# Almacenamiento en memoria de un String
 
 Stack:
 * nombre
@@ -225,6 +234,7 @@ Stack:
 
 Heap:
 * Contenido del String
+* Varibles que no se conoce su tamaño en tiempo de compilación o que su tamaño puede cambiar en tiempo de ejecución.
 
 Shallow copy, en rust es conocido como move.
 Deep copy, en rust es conocido como clone.
@@ -232,3 +242,5 @@ Deep copy, en rust es conocido como clone.
 Rust nunca crea copias de los datos por default.
 
 Cuando el tamaño de la variable es conocida en tiempo de compilación esta variable es alamcenada en el Stack de la memoria por lo que puede ser copiada (swallow copy) entre variables, sin la necesidad de clonarla.
+
+
